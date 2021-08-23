@@ -45,6 +45,12 @@ public class Pet {
 		super();
 	}
 
+	public Pet(Long id, Category category, String name, Collection<URL> photoUrls, Collection<Tag> tags,
+			Status status) {
+		this(category, name, photoUrls, tags, status);
+		this.id = id;
+	}
+
 	public Pet(Category category, String name, Collection<URL> photoUrls, Collection<Tag> tags, Status status) {
 		super();
 		this.category = category;
